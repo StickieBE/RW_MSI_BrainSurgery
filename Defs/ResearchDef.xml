@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>LobotomySurgery</defName>
+    <label>Lobotomy</label>
+    <description>Enabeling lobotomizing players.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.83</researchViewY>
+
+  </ResearchProjectDef>
+  
+  
+</Defs>
