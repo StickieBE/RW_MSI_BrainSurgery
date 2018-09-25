@@ -9,6 +9,20 @@
       <partEfficiency>1</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+  </HediffDef>
+
+  <HediffDef ParentName="Lobotomy_effect_base">
+    <defName>Lobotomy_effect_frontalLobe</defName>
+    <!-- displayName in health tab shown to player -->
+    <label>lobotomized (frontal lobe)</label>
+    <labelNoun>lobotomizedFrontalLobe</labelNoun>
+  </HediffDef>
+
+  <HediffDef ParentName="Lobotomy_effect_base">
+    <defName>Lobotomy_effect_limbicLobe</defName>
+    <!-- displayName in health tab shown to player -->
+    <label>lobotomized (limbic lobe)</label>
+    <labelNoun>lobotomizedLimbicLobe</labelNoun>
     <stages>
       <li>
         <opinionOfOthersFactor>100</opinionOfOthersFactor>
@@ -33,17 +47,22 @@
   </HediffDef>
 
   <HediffDef ParentName="Lobotomy_effect_base">
-    <defName>Lobotomy_effect_frontalLobe</defName>
+    <defName>Lobotomy_effect_cerebellum</defName>
     <!-- displayName in health tab shown to player -->
-    <label>lobotomized (frontal lobe)</label>
-    <labelNoun>lobotomizedFrontalLobe</labelNoun>
-  </HediffDef>
-
-  <HediffDef ParentName="Lobotomy_effect_base">
-    <defName>Lobotomy_effect_temporalLobe</defName>
-    <!-- displayName in health tab shown to player -->
-    <label>lobotomized (temporal lobe)</label>
-    <labelNoun>lobotomizedTemporalLobe</labelNoun>
+    <label>lobotomized (cerebellum)</label>
+    <labelNoun>lobotomizedCerebellum</labelNoun>
+    <stages>
+      <li>
+        <opinionOfOthersFactor>100</opinionOfOthersFactor>
+        <partIgnoreMissingHP>true</partIgnoreMissingHP>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
   </HediffDef>
 
   <ThoughtDef Name="Lobotomy_thoughts_base" Abstract="True">
@@ -52,23 +71,11 @@
   </ThoughtDef>
 
   <ThoughtDef ParentName="Lobotomy_thoughts_base">
-    <defName>Lobotomy_thoughts_frontalLobe</defName>
-    <hediff>Lobotomy_effect_frontalLobe</hediff> <!-- attached Hediff -->
+    <defName>Lobotomy_thoughts_LimbicLobe</defName>
+    <hediff>Lobotomy_effect_limbicLobe</hediff> <!-- attached Hediff -->
     <stages>
       <li>
-        <label>Lobotomized (frontal lobe)</label>
-        <description>Durrrr.....</description>
-        <baseMoodEffect>100</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
-  <ThoughtDef ParentName="Lobotomy_thoughts_base">
-    <defName>Lobotomy_thoughts_temporalLobe</defName>
-    <hediff>Lobotomy_effect_temporalLobe</hediff> <!-- attached Hediff -->
-    <stages>
-      <li>
-        <label>Lobotomized (temporal lobe)</label>
+        <label>Lobotomized (limbic lobe)</label>
         <description>Durrrr.....</description>
         <baseMoodEffect>100</baseMoodEffect>
       </li>
