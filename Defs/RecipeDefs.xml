@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  
+<RecipeDef Name="LobotomyBase" ParentName="SurgeryFlesh" Abstract="True">
+		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+	</RecipeDef>
+
+  <RecipeDef ParentName="LobotomyBase">
+		<defName>"Lobotomy"</defName>
+		<label>Lobotomy needle</label>
+		<description>Gets rid of thoughts, personality, and most importantly the want of freedom.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Giving {1} a lobotomy.</jobString>
+		<workAmount>2000</workAmount>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LobotomyNeedle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>LobotomyNeedle</li>
+			</thingDefs>
+		</fixedIngredientFilter>  
+
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+<addsHediff>Lobotomized</addsHediff>
+	</RecipeDef>
+</Defs> 

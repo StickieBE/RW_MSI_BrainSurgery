@@ -1,0 +1,45 @@
+
+<Defs>
+
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Lobotomized</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>lobotomized</label>
+    <stages>
+      <li>
+        <opinionOfOthersFactor>100</opinionOfOthersFactor>
+        <partIgnoreMissingHP>true</partIgnoreMissingHP>
+<socialFightChanceFactor>-10.5</socialFightChanceFactor>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <setMax>0.2</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+             <setMax>0.4</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Lobotomized</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Lobotomized</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Lobotomized</label>
+        <description>Durrrr.....</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
