@@ -37,7 +37,6 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass> <!-- worker class? -->
-		<researchPrerequisite>LobotomySurgery</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Lobotomy_base">
@@ -46,6 +45,7 @@
 		<jobString>Lobotomizing (frontal lobe).</jobString> <!-- action feedback to user while performing -->
 		<addsHediff>Lobotomy_effect_frontalLobe</addsHediff> <!-- statechange on success -->
 		<description>Turns prisoner into a psychopath.</description> <!-- Description in info menu -->
+    <researchPrerequisite>FrontalLobe</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Lobotomy_base">
@@ -54,6 +54,7 @@
 		<jobString>Lobotomizing (limbic lobe).</jobString> <!-- action feedback to user while performing -->
 		<addsHediff>Lobotomy_effect_limbicLobe</addsHediff> <!-- statechange on success -->
 		<description>Gets rid of thoughts, personality and need for freedom.</description> <!-- Description in info menu -->
+    <researchPrerequisite>LimbicSystem</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Lobotomy_base">
@@ -62,5 +63,6 @@
 		<jobString>Lobotomizing (cerebellum).</jobString> <!-- action feedback to user while performing -->
 		<addsHediff>Lobotomy_effect_cerebellum</addsHediff> <!-- statechange on success -->
 		<description>Immobilizes a prisoner.</description> <!-- Description in info menu -->
+    <researchPrerequisite>Cerebellum</researchPrerequisite>
 	</RecipeDef>
 </Defs>

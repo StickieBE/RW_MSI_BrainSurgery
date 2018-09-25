@@ -2,11 +2,55 @@
 <Defs>
 
   <ResearchProjectDef>
-    <defName>LobotomySurgery</defName>
-    <label>Lobotomy</label>
-    <description>Enabeling lobotomizing players.</description>
-    <baseCost>500</baseCost>
+    <defName>BrainSurgery</defName>
+    <label>brain surgerys</label>
+    <description>Enables brain surgerys.</description>
+    <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.83</researchViewY>
+
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>LimbicSystem</defName>
+    <label>limbic surgery</label>
+    <description>Enabeling lobotomizing players, this will make them simple.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>BrainSurgery</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.83</researchViewY>
+
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Cerebellum</defName>
+    <label>Cerebellum surgery</label>
+    <description>A surgery that paralizes the player.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>BrainSurgery</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.83</researchViewY>
+
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>FrontalLobe</defName>
+    <label>Frontal lobe surgery</label>
+    <description>A surgery that makes the player a psychopath.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>BrainSurgery</li>
+    </prerequisites>
     <researchViewX>5</researchViewX>
     <researchViewY>1.83</researchViewY>
 
