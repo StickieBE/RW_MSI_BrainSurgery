@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-  
-<RecipeDef Name="LobotomyBase" ParentName="SurgeryFlesh" Abstract="True">
-		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
-		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
-		<recipeUsers>
+
+	<!--
+		Abstract stops the incomplete base class from loading, as to not error out the game.
+		If abstract, the game requires you to name the key entry directly,
+		instead of using defName parameter.
+	-->
+	<RecipeDef Abstract="True" Name="Lobotomy_base" ParentName="SurgeryFlesh">
+		<effectWorking>ButcherFlesh</effectWorking> <!-- effect when performing action -->
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<recipeUsers> <!-- Kind of object action can be performed on -->
 			<li>Human</li>
 		</recipeUsers>
-	</RecipeDef>
-
-  <RecipeDef ParentName="LobotomyBase">
-		<defName>"Lobotomy"</defName>
-		<label>Lobotomy needle</label>
-		<description>Gets rid of thoughts, personality, and most importantly the want of freedom.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Giving {1} a lobotomy.</jobString>
-		<workAmount>2000</workAmount>
-		<effectWorking>ButcherFlesh</effectWorking>
-		<ingredients>
+		<workAmount>2000</workAmount> <!-- time action takes -->
+		<surgerySuccessChanceFactor>5</surgerySuccessChanceFactor> <!-- chance of success -->
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<skillRequirements> <!-- skill requirements -->
+      <Medicine>1</Medicine>
+    </skillRequirements>
+		<ingredients> <!-- items needed to perform action -->
 			<li>
 				<filter>
-          <categories>
+					<categories>
 						<li>Medicine</li>
 					</categories>
 				</filter>
@@ -30,24 +30,38 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>LobotomyNeedle</li>
+						<li>Scalpel</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-      <categories>
+			<categories>
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>LobotomyNeedle</li>
+				<li>Scalpel</li>
 			</thingDefs>
-		</fixedIngredientFilter>  
-
-		<appliedOnFixedBodyParts>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts> <!-- bodypart action is performed on -->
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
-<addsHediff>Lobotomized</addsHediff>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass> <!-- worker class? -->
+		<description>Gets rid of thoughts, personality and need for freedom.</description> <!-- Description in info menu -->
 	</RecipeDef>
-</Defs> 
+
+	<RecipeDef ParentName="Lobotomy_base">
+		<defName>Lobotomy_action_frontalLobe</defName> <!-- classname -->
+		<label>lobotomize (frontal lobe)</label> <!-- actionname visible to player -->
+		<jobString>Lobotomizing (frontal lobe).</jobString> <!-- action feedback to user while performing -->
+		<addsHediff>Lobotomy_effect_frontalLobe</addsHediff> <!-- statechange on success -->
+	</RecipeDef>
+
+	<RecipeDef ParentName="Lobotomy_base">
+		<defName>Lobotomy_action_temporalLobe</defName> <!-- classname -->
+		<label>lobotomize (temporal lobe)</label> <!-- actionname visible to player -->
+		<jobString>Lobotomizing (temporal lobe).</jobString> <!-- action feedback to user while performing -->
+		<addsHediff>Lobotomy_effect_temporalLobe</addsHediff> <!-- statechange on success -->
+	</RecipeDef>
+</Defs>
