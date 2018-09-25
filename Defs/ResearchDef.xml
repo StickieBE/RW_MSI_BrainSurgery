@@ -8,8 +8,8 @@
     <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <researchViewX>5</researchViewX>
-    <researchViewY>1.83</researchViewY>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4.5</researchViewY>
 
   </ResearchProjectDef>
   
@@ -24,7 +24,7 @@
       <li>BrainSurgery</li>
     </prerequisites>
     <researchViewX>5</researchViewX>
-    <researchViewY>1.83</researchViewY>
+    <researchViewY>5.5</researchViewY>
 
   </ResearchProjectDef>
   <ResearchProjectDef>
@@ -37,8 +37,8 @@
     <prerequisites>
       <li>BrainSurgery</li>
     </prerequisites>
-    <researchViewX>5</researchViewX>
-    <researchViewY>1.83</researchViewY>
+    <researchViewX>6</researchViewX>
+    <researchViewY>5.5</researchViewY>
 
   </ResearchProjectDef>
   <ResearchProjectDef>
@@ -51,8 +51,8 @@
     <prerequisites>
       <li>BrainSurgery</li>
     </prerequisites>
-    <researchViewX>5</researchViewX>
-    <researchViewY>1.83</researchViewY>
+    <researchViewX>7</researchViewX>
+    <researchViewY>5.5</researchViewY>
 
   </ResearchProjectDef>
   
