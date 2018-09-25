@@ -37,6 +37,7 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass> <!-- worker class? -->
+		<researchPrerequisite>LobotomySurgery</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Lobotomy_base">
