@@ -16,6 +16,7 @@
     <!-- displayName in health tab shown to player -->
     <label>lobotomized (frontal lobe)</label>
     <labelNoun>lobotomizedFrontalLobe</labelNoun>
+    <!--<hediffClass>Lobotomize.Test</hediffClass> <!-- worker class? -->
   </HediffDef>
 
   <HediffDef ParentName="Lobotomy_effect_base">
