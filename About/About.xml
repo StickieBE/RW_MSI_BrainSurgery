@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Lobotomy</name>
+	<name>MS-Industries::Brain surgery</name>
 	<author>Arystique, Stickie, Xynthinel</author>
 	<targetVersion>0.19.0</targetVersion>
 	<description>
-		A mod for those who want to make those pesky prisoners nothing more than a slave for cleaning, hauling and mining.
+		Ever get the feeling your prisoners are causing too much trouble?
+		MS-Industries is here to provide a solution: Brain surgery!
+		Keep your prisoners in check by directly manipulating their cranium
+		using state of the art tools. Based on previous work by Arystique
+		-Lobotomy-, we fixed the mod for .19 and added the possibility to
+		immobilize prisoners for potential harvesting.
+		Have fun with it!
 	</description>
 </ModMetaData>
