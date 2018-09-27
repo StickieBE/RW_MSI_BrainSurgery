@@ -65,21 +65,4 @@
       </li>
     </stages>
   </HediffDef>
-
-  <ThoughtDef Name="Lobotomy_thoughts_base" Abstract="True">
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-  </ThoughtDef>
-
-  <ThoughtDef ParentName="Lobotomy_thoughts_base">
-    <defName>Lobotomy_thoughts_LimbicLobe</defName>
-    <hediff>Lobotomy_effect_limbicLobe</hediff> <!-- attached Hediff -->
-    <stages>
-      <li>
-        <label>Lobotomized (limbic lobe)</label>
-        <description>Durrrr.....</description>
-        <baseMoodEffect>100</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
 </Defs>

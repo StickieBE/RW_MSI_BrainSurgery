@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef Name="Surgery_Thoughts_Base" Abstract="True">
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="Surgery_Thoughts_Base">
+    <defName>Surgery_Thoughts_LimbicLobe</defName>
+    <hediff>Surgery_Effect_LimbicLobe</hediff> <!-- attached Hediff -->
+    <stages>
+      <li>
+        <label>limbic lobe removed</label>
+        <description>Durrrr.....</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
