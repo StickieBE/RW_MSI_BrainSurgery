@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <HediffDef Abstract="True" Name="Lobotomy_effect_base" ParentName="AddedBodyPartBase">
+  <HediffDef Abstract="True" Name="Surgery_Effect_Base" ParentName="AddedBodyPartBase">
     <!-- item spawned if trait is removed -->
     <!--<spawnThingOnRemoved>BionicStomach</spawnThingOnRemoved>-->
     <!-- added effects -->
@@ -11,19 +11,24 @@
     </addedPartProps>
   </HediffDef>
 
-  <HediffDef ParentName="Lobotomy_effect_base">
-    <defName>Lobotomy_effect_frontalLobe</defName>
+  <!--
+  <HediffDef ParentName="Surgery_Effect_Base">
+    <defName>Lobotomy_effect_frontalLobe</defName> -->
     <!-- displayName in health tab shown to player -->
+    <!--
     <label>lobotomized (frontal lobe)</label>
     <labelNoun>lobotomizedFrontalLobe</labelNoun>
-    <!--<hediffClass>Lobotomize.Test</hediffClass> <!-- worker class? -->
+    -->
+    <!--<hediffClass>Lobotomize.Test</hediffClass> --> <!-- worker class? -->
+    <!--
   </HediffDef>
+  -->
 
-  <HediffDef ParentName="Lobotomy_effect_base">
-    <defName>Lobotomy_effect_limbicLobe</defName>
+  <HediffDef ParentName="Surgery_Effect_Base">
+    <defName>Surgery_Effect_LimbicLobe</defName>
     <!-- displayName in health tab shown to player -->
-    <label>lobotomized (limbic lobe)</label>
-    <labelNoun>lobotomizedLimbicLobe</labelNoun>
+    <label>Limbic lobe removed</label>
+    <labelNoun>SurgeryLimbicLobe</labelNoun>
     <stages>
       <li>
         <opinionOfOthersFactor>100</opinionOfOthersFactor>
@@ -47,11 +52,11 @@
     </stages>
   </HediffDef>
 
-  <HediffDef ParentName="Lobotomy_effect_base">
-    <defName>Lobotomy_effect_cerebellum</defName>
+  <HediffDef ParentName="Surgery_Effect_Base">
+    <defName>Surgery_Effect_Cerebellum</defName>
     <!-- displayName in health tab shown to player -->
-    <label>lobotomized (cerebellum)</label>
-    <labelNoun>lobotomizedCerebellum</labelNoun>
+    <label>Cerebellum removed</label>
+    <labelNoun>SurgeryCerebellum</labelNoun>
     <stages>
       <li>
         <opinionOfOthersFactor>100</opinionOfOthersFactor>

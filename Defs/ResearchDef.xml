@@ -3,8 +3,8 @@
 
   <ResearchProjectDef>
     <defName>BrainSurgery</defName>
-    <label>brain surgerys</label>
-    <description>Enables brain surgerys.</description>
+    <label>Brain surgery</label>
+    <description>Enables brain surgery.</description>
     <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -14,9 +14,9 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef>
-    <defName>LimbicSystem</defName>
-    <label>limbic surgery</label>
-    <description>Enabeling lobotomizing players, this will make them simple.</description>
+    <defName>LimbicLobe</defName>
+    <label>limbic lobe removal</label>
+    <description>This surgery affects the subjects' needs and removes its personality.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -29,8 +29,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Cerebellum</defName>
-    <label>Cerebellum surgery</label>
-    <description>A surgery that paralizes the player.</description>
+    <label>Cerebellum removal</label>
+    <description>This surgery immobilizes the subject.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -39,8 +39,9 @@
     </prerequisites>
     <researchViewX>6</researchViewX>
     <researchViewY>5.5</researchViewY>
-
   </ResearchProjectDef>
+
+  <!--
   <ResearchProjectDef>
     <defName>FrontalLobe</defName>
     <label>Frontal lobe surgery</label>
@@ -55,6 +56,7 @@
     <researchViewY>5.5</researchViewY>
 
   </ResearchProjectDef>
+  -->
   
   
 </Defs>

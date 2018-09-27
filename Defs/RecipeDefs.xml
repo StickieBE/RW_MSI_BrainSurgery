@@ -5,8 +5,9 @@
 		Abstract stops the incomplete base class from loading, as to not error out the game.
 		If abstract, the game requires you to name the key entry directly,
 		instead of using defName parameter.
+		Abstract classes get 'discarded' after game initializes.
 	-->
-	<RecipeDef Abstract="True" Name="Lobotomy_base" ParentName="SurgeryFlesh">
+	<RecipeDef Abstract="True" Name="Surgery_Action_Base" ParentName="SurgeryFlesh">
 		<effectWorking>Surgery</effectWorking> <!-- effect when performing action -->
 		<soundWorking>Recipe_Surgery</soundWorking>
 		<recipeUsers> <!-- Kind of object action can be performed on -->
@@ -39,29 +40,31 @@
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass> <!-- worker class? -->
 	</RecipeDef>
 
-	<RecipeDef ParentName="Lobotomy_base">
-		<defName>Lobotomy_action_frontalLobe</defName> <!-- classname -->
-		<label>lobotomize (frontal lobe)</label> <!-- actionname visible to player -->
-		<jobString>Lobotomizing (frontal lobe).</jobString> <!-- action feedback to user while performing -->
-		<addsHediff>Lobotomy_effect_frontalLobe</addsHediff> <!-- statechange on success -->
-		<description>Turns prisoner into a psychopath.</description> <!-- Description in info menu -->
+	<!--
+	<RecipeDef ParentName="Surgery_Action_Base">
+		<defName>Lobotomy_action_frontalLobe</defName>
+		<label>lobotomize (frontal lobe)</label> 
+		<jobString>Lobotomizing (frontal lobe).</jobString> 
+		<addsHediff>Lobotomy_effect_frontalLobe</addsHediff> 
+		<description>Turns prisoner into a psychopath.</description>
     <researchPrerequisite>FrontalLobe</researchPrerequisite>
 	</RecipeDef>
+	-->
 
-	<RecipeDef ParentName="Lobotomy_base">
-		<defName>Lobotomy_action_limbicLobe</defName> <!-- classname -->
-		<label>lobotomize (limbic lobe)</label> <!-- actionname visible to player -->
-		<jobString>Lobotomizing (limbic lobe).</jobString> <!-- action feedback to user while performing -->
-		<addsHediff>Lobotomy_effect_limbicLobe</addsHediff> <!-- statechange on success -->
+	<RecipeDef ParentName="Surgery_Action_Base">
+		<defName>Surgery_Action_LimbicLobe</defName> <!-- classname -->
+		<label>remove limbic lobe (immobilize)</label> <!-- actionname visible to player -->
+		<jobString>removing limbic lobe.</jobString> <!-- action feedback to user while performing -->
+		<addsHediff>Surgery_Effect_LimbicLobe</addsHediff> <!-- statechange on success -->
 		<description>Gets rid of thoughts, personality and need for freedom.</description> <!-- Description in info menu -->
-    <researchPrerequisite>LimbicSystem</researchPrerequisite>
+    <researchPrerequisite>LimbicLobe</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Lobotomy_base">
-		<defName>Lobotomy_action_cerebellum</defName> <!-- classname -->
-		<label>lobotomize (cerebellum)</label> <!-- actionname visible to player -->
-		<jobString>Lobotomizing (cerebellum).</jobString> <!-- action feedback to user while performing -->
-		<addsHediff>Lobotomy_effect_cerebellum</addsHediff> <!-- statechange on success -->
+	<RecipeDef ParentName="Surgery_Action_Base">
+		<defName>Lobotomy_Action_Cerebellum</defName> <!-- classname -->
+		<label>remove cerebellum (make simple)</label> <!-- actionname visible to player -->
+		<jobString>removing cerebellum.</jobString> <!-- action feedback to user while performing -->
+		<addsHediff>Surgery_Effect_Cerebellum</addsHediff> <!-- statechange on success -->
 		<description>Immobilizes a prisoner.</description> <!-- Description in info menu -->
     <researchPrerequisite>Cerebellum</researchPrerequisite>
 	</RecipeDef>
