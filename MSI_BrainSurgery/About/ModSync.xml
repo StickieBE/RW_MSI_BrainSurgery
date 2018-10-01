@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>37cce37e-4653-4387-887b-25d2db4a68e4</ID>
+  <ModName>[MS-I] Brain surgery</ModName>
+  <Version>1.0.0.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Bitbucket">
+    <Owner>msindustries</Owner>
+    <Project>brainsurgery</Project>
+    <AboutDir>MSI_BrainSurgery/About</AboutDir>
+    <DownloadFrom>ModSyncDownloads</DownloadFrom>
+    <Branch>master</Branch>
+    <Commit>bd2cb6944380a18dee794bbfb6ec96f9ca0d3c1c</Commit>
+  </Host>
+</ModSyncNinjaData>
