@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>[MS-I] Brain surgery</identifier>
+    <version>1.0.0.1</version>
+    <dependencies>
+    </dependencies>
+    <incompatibleWith>
+    </incompatibleWith>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+    </loadAfter>
+    <manifestUri>https://bitbucket.org/msindustries/brainsurgery/raw/master/MSI_BrainSurgery/About/Manifest.xml</manifestUri>
+    <downloadUri>https://bitbucket.org/msindustries/brainsurgery/get/master.zip</downloadUri>
+</Manifest>
