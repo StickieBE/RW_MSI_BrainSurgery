@@ -2,15 +2,15 @@
 
 <ModMetaData>
 	<name>[MS-I] Brain surgery</name>
-	<author>Arystique, Stickie, Xynthinel</author>
-	<targetVersion>0.19.0</targetVersion>
-	<description>
-		Ever get the feeling your prisoners are causing too much trouble?
-		MS-Industries is here to provide a solution: Brain surgery!
-		Keep your prisoners in check by directly manipulating their cranium
-		using state of the art tools. Based on previous work by Arystique
-		-Lobotomy-, we fixed the mod for B19 and added the possibility to
-		immobilize prisoners for potential harvesting.
-		Have fun with it!
-	</description>
+	<author>Arystique, Stickie, Xynthinel</author>	
+	<targetVersion>0.19.2009</targetVersion>
+	<description>Ever get the feeling your prisoners are causing too much trouble?
+
+MS-Industries is here to provide a solution: Brain surgery!
+Keep your prisoners in check by directly manipulating their cranium
+using state of the art tools. Based on previous work by Arystique
+-Lobotomy-, we fixed the mod for B19 and added the possibility to
+immobilize prisoners for potential harvesting.
+
+Have fun with it!</description>
 </ModMetaData>
