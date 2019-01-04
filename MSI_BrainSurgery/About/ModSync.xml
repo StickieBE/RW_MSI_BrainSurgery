@@ -2,13 +2,13 @@
 <ModSyncNinjaData>
   <ID>37cce37e-4653-4387-887b-25d2db4a68e4</ID>
   <ModName>[MS-I] Brain surgery</ModName>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.2</Version>
   <SaveBreaking>False</SaveBreaking>
-  <Host name="Bitbucket">
-    <Owner>msindustries</Owner>
-    <Project>brainsurgery</Project>
+  <Host name="Github">
+    <Owner>StickieBE</Owner>
+    <Project>RW_MSI_BrainSurgery</Project>
     <AboutDir>MSI_BrainSurgery/About</AboutDir>
-    <DownloadFrom>ModSyncDownloads</DownloadFrom>
+    <DownloadFrom>ModSyncReleases</DownloadFrom>
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
