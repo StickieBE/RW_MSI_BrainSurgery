@@ -7,7 +7,7 @@ Ever get the feeling your prisoners are causing too much trouble?
 MS-Industries is here to provide a solution: Brain surgery!
 
 Keep your prisoners in check by directly manipulating their cranium using state of the art tools.
-We fixed the mod for B19 and added the possibility to immobilize prisoners for potential harvesting.
+We fixed the mod for (B19 / 1.0) and added the possibility to immobilize prisoners for potential harvesting.
 
 To be able to perform brain surgeries, a doctor with medicine skill of 13 is required, as well as the required research.
 The research can be unlocked using the advanced research table.
