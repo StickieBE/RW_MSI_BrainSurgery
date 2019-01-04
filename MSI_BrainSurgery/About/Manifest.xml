@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-    <identifier>[MS-I] Brain surgery</identifier>
-    <version>1.0.0.1</version>
+    <identifier>[MS-I] BrainSurgery</identifier>
+    <version>1.0.0.2</version>
     <dependencies>
-    </dependencies>
-    <incompatibleWith>
-    </incompatibleWith>
-    <loadBefore>
-    </loadBefore>
-    <loadAfter>
-    </loadAfter>
-    <manifestUri>https://bitbucket.org/msindustries/brainsurgery/raw/master/MSI_BrainSurgery/About/Manifest.xml</manifestUri>
-    <downloadUri>https://bitbucket.org/msindustries/brainsurgery/get/master.zip</downloadUri>
+        </dependencies>
+        <incompatibleWith>
+        </incompatibleWith>
+        <loadBefore>
+        </loadBefore>
+        <loadAfter>
+        </loadAfter>
+        <suggests>
+          <li>972057888</li>
+          <li>730854291</li>
+          <li>725465444</li>
+        </suggests>
+        <showCrossPromotions>true</showCrossPromotions>
+        <manifestUri>https://raw.githubusercontent.com/StickieBE/RW_MSI_BrainSurgery/master/MSI_BrainSurgery/About/Manifest.xml</manifestUri>
+        <downloadUri>https://github.com/StickieBE/RW_MSI_BrainSurgery/releases/latest</downloadUri>
 </Manifest>
