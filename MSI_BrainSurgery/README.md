@@ -1,4 +1,4 @@
-# [B19]Brain surgery
+# Brain surgery
 
 ## Description
 
