@@ -40,9 +40,18 @@ Recommended usage with the following mods:
 
 ## Downloads
 
+### [1.0]
+
+- [Github](https://github.com/StickieBE/RW_MSI_BrainSurgery/releases/tag/v1.0.0.2)
 - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1524343978)
-- [NexusMods](https://www.nexusmods.com/rimworld/mods/266)
-- [ModDB](https://www.moddb.com/mods/ms-i-brain-surgery-b19)
+- [NexusMods](https://www.nexusmods.com/rimworld/mods/266?tab=files)
+- [ModDB](https://www.moddb.com/mods/ms-i-brain-surgery/downloads/msi-brainsurgery-v1002)
+
+### [B19]
+
+- [Github](https://github.com/StickieBE/RW_MSI_BrainSurgery/releases/tag/v1.0.0.1)
+- [NexusMods](https://www.nexusmods.com/rimworld/mods/266?tab=files)
+- [ModDB](https://www.moddb.com/mods/ms-i-brain-surgery/downloads/release3)
 
 ## License
 
