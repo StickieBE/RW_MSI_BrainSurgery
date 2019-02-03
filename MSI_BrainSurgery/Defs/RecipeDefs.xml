@@ -53,7 +53,7 @@
 
 	<RecipeDef ParentName="Surgery_Action_Base">
 		<defName>Surgery_Action_LimbicLobe</defName> <!-- classname -->
-		<label>remove limbic lobe (immobilize)</label> <!-- actionname visible to player -->
+		<label>remove limbic lobe (make simple)</label> <!-- actionname visible to player -->
 		<jobString>removing limbic lobe.</jobString> <!-- action feedback to user while performing -->
 		<addsHediff>Surgery_Effect_LimbicLobe</addsHediff> <!-- statechange on success -->
 		<description>Gets rid of thoughts, personality and need for freedom.</description> <!-- Description in info menu -->
@@ -62,7 +62,7 @@
 
 	<RecipeDef ParentName="Surgery_Action_Base">
 		<defName>Lobotomy_Action_Cerebellum</defName> <!-- classname -->
-		<label>remove cerebellum (make simple)</label> <!-- actionname visible to player -->
+		<label>remove cerebellum (immobilize)</label> <!-- actionname visible to player -->
 		<jobString>removing cerebellum.</jobString> <!-- action feedback to user while performing -->
 		<addsHediff>Surgery_Effect_Cerebellum</addsHediff> <!-- statechange on success -->
 		<description>Immobilizes a prisoner.</description> <!-- Description in info menu -->
